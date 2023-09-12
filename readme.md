@@ -1,9 +1,7 @@
-# Tailwind Sandbox
+# Understanding tailwind classes
 
-This is part of my Tailwind From Scratch course. The sandbox contains around 20 different folders/files that focus on specific aspects/classes of Tailwind.
+This is a simple repo with sample implementations of the classes provided by tailwind. 
+Very simple to undertand and implement 
 
-If you are taking the course, use the **"tailwind-sandbox-starter"** folder and work through the course with me. The **"tailwind-sandbox-done"** folder is obviously the finished code.
-
-We are just using the Play CDN for this part of the course.
-
-The main projects for the course will be in a different repo.
+To run the sample. Just download VS Code and open this project. Install the live server 
+plugin. Once done, just right click on the html samples and run on live server. 
