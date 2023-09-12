@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link href="./tailwindstyle.css" rel="stylesheet"-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Message Alert</title>
+  </head>
+  <body>    
+
+    <!-- Default colors -->
+    <!-- white, black, red, green, blue, orange, yellow, purple, lime, emerald, teal, cyan, indigo, violet, fuchsia, pink, rose, sky, gray, slate, zinc, neutral, stone, amber,  -->
+    <h2 class="ml-5 pl-1">Coloring and BG color classes</h2>
+    <div class="container mx-auto m-10 mt-0 pt-5 pb-5 pl-10 bg-slate-100 border border-blue-200 shadow-lg shadow-slate-300">
+      Container styling with padding, margin, background, border and shadow classes applied
+      <p class="text-black mt-5">Generic black text - Tailwind Testing</p>
+      <p class="text-white">Generic white text - Tailwind Testing</p>
+      <!--Variation of color depth ranges from 100 t0 900 -->
+      <p class="text-red-100">Range in color contrast(text-red-100)- Tailwind Testing</p>
+      <p class="text-red-300">Range in color contrast(text-red-300)- Tailwind Testing</p>
+      <p class="text-red-500">Range in color contrast(text-red-500)- Tailwind Testing</p>
+      <p class="text-red-700">Range in color contrast(text-red-700)- Tailwind Testing</p>
+      <p class="text-red-900">Range in color contrast(text-red-900)- Tailwind Testing</p>
+      <p class="underline decoration-yellow-500">Underlined with color - Tailwind Testing</p>
+      <div class="p-5 pl-0">
+        <input type="checkbox" class="accent-purple-500" checked/> Check my accent color
+      </div>      
+      <div class="p-5 pl-0">
+        <p class="bg-[#323aaa]">Arbitrary colors class : bg-[#323aaa] </p>
+        <p class="bg-[rgb(255,100,222)]">Arbitrary colors class : bg-[rgb(255,100,222)] </p>
+        <p class="bg-[steelblue]">Arbitrary colors class : bg-[steelblue] </p>
+      </div>
+    </div>
+    
+    <!-- Container class -->
+    <h2 class="ml-5 pl-1">Container styling</h2>
+    <div class="container mx-auto border border-blue-200 m-5 mt-0 p-5">      
+      <article>        
+        <div class="mt-5 mb-5">
+          <strong>Note : m-1 / p-1 => 0.250 rem => 4px (Standard)</strong><br/>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+      </article>
+    </div>
+
+    <!-- Typography -->
+    <h2 class="ml-5 pl-1">Font / Text variations </h2>
+    <div class="container flex mx-auto border border-blue-200 m-5 p-5 mt-0 font-mono">      
+      <div class="pr-3 pl-3 border border-r-blue-200 border-t-0 border-b-0 border-l-0">
+        <h3 class="underline">Font Size</h2>
+        <div class="text-xs">Extra Small Text</div>
+        <div class="text-sm">Small Text</div>
+        <div class="text-base">Base Text</div>
+        <div class="text-lg">Large Text</div>
+        <div class="text-xl">Extra Large Text</div>
+        <div class="text-2xl">2x Large Text</div>
+      </div>
+      <div class="pr-3 pl-3 border border-r-blue-200 border-t-0 border-b-0 border-l-0">
+        <h3 class="underline">Font Weight</h2>
+        <div class="font-light">Light Text</div>
+        <div class="font-normal">Normal Text</div>
+        <div class="font-medium">Medium Text</div>
+        <div class="font-semibold">Semi-Bold Text</div>
+        <div class="font-bold">Bol Text</div>
+      </div>
+      <div class="pr-3 pl-3 border border-r-blue-200 border-t-0 border-b-0 border-l-0">
+        <h3 class="underline">Character spacing(tracking-**)</h2>
+        <div class="tracking-tighter">Text Spacing</div>
+        <div class="tracking-normal">Text Spacing</div>
+        <div class="tracking-wider">Text Spacing</div>
+        <h3 class="underline">Text Alignment</h2>
+        <div class="text-left">Left Align</div>
+        <div class="text-center">Center Align</div>
+        <div class="text-right">Right Align</div>
+      </div>
+      <div class="pr-3 pl-3 border border-r-blue-200 border-t-0 border-b-0 border-l-0">
+        <h3 class="underline">Text transform</h2>
+        <div class="normal-case">Normal Case</div>
+        <div class="uppercase">Upper Case</div>
+        <div class="lowercase">Lower Case</div>
+        <div class="capitalize">Text Capitalize</div>
+      </div>
+    </div>
+
+    <!-- Width & Height -->
+    <h2 class="ml-5 pl-1">Container width related classes </h2>
+    <div class="container mx-auto border border-blue-200 m-5 p-5 mt-0 font-mono">
+      <!--div class="bg-slate-300 w-4">width of div (w-4 => 1rem => 16px approx.)</div-->
+      <div class="bg-slate-700 w-96 text-cyan-50 p-2">width of div (w-96 => 24rem => 384px approx.)</div>
+
+      <div class="bg-slate-700 w-1/2 text-cyan-50 p-2 mt-2">width of div (w-1/2 => 50% approx.)</div>
+      <div class="bg-slate-700 w-1/3 text-cyan-50 p-2 mt-2">width of div (w-1/3 => 33% approx.)</div>
+      <div class="bg-slate-700 w-1/4 text-cyan-50 p-2 mt-2">width of div (w-1/4 => 25% approx.)</div>
+
+      <div class="bg-slate-700 w-screen text-cyan-50 p-2 mt-2">width of div screen width(w-screen)</div>
+      <div class="bg-slate-700 w-full text-cyan-50 p-2 mt-2">width of div full width(w-full)</div>
+      <div class="bg-slate-700 w-[300px] text-cyan-50 p-2 mt-2">width of div arbitary width(w-[300px])</div>
+      <div class="bg-slate-700 max-w-lg mx-auto text-cyan-50 p-2 mt-2">Large screen max width(max-w-lg), with mx-auto</div>
+    </div>
+
+    <h2 class="ml-5 pl-1">Container height related classes </h2>
+    <div class="container flex mx-auto border border-blue-200 m-5 p-5 mt-0 font-mono">
+      <div class="bg-slate-700 h-48 w-24 text-cyan-50 p-2">height of div (h-48 => 8rem => 192px approx.)</div>
+      <div class="bg-slate-700 h-1/2 w-24 text-cyan-50 p-2 ml-2">height of div (h-1/2 => 50% approx.)</div>
+      <div class="bg-slate-700 h-[100px] text-cyan-50 p-2 ml-2">height of div arbitary height(h-[100px])</div>
+    </div>
+
+    <h2 class="ml-5 pl-1">Container positioning related classes </h2>
+    <div class="container flex mx-auto border border-blue-200 m-5 p-5 mt-0 font-mono">
+      <div class="w-1/12 h-16 m-2 border border-red-300 relative">
+        <div class="absolute left-0 top-0 bg-slate-500 w-8 h-8 text-white text-center"> 1 </div>
+      </div>      
+      <div class="w-1/12 h-16 m-2 border border-red-300 relative">
+        <div class="absolute right-0 bottom-0 bg-slate-500 w-8 h-8 text-white text-center"> 2 </div>
+      </div>  
+      <div class="w-1/12 h-16 m-2 border border-red-300 relative">
+        <div class="absolute inset-x-0 bg-slate-500 h-8 text-white text-center"> 3 </div>
+      </div>
+      <div class="w-1/12 h-16 m-2 border border-red-300 relative">
+        <div class="absolute inset-y-0 bg-slate-500 w-8 text-white text-center right-0"> 4 </div>
+      </div>
+      <div class="pt-2">
+        <div class="text-[11px]">1 => absolute position inside a relative parent left-0, top-0</div>
+        <div class="text-[11px]">2 => absolute position inside a relative parent bottom-0, right-0</div>
+        <div class="text-[11px]">3 => absolute position inside a relative parent inset-x-0, top-0</div>
+        <div class="text-[11px]">4 => absolute position inside a relative parent inset-y-0, right-0</div>
+      </div>
+    </div>
+
+    <h2 class="ml-5 pl-1">Container z-index related classes </h2>
+    <div class="container flex mx-auto border border-blue-200 m-5 p-5 mt-0 font-mono">
+      <div class="w-1/2 h-32 m-2 border border-red-300 relative">
+        <div class="absolute left-0 top-0 bg-slate-100 w-8 h-8 text-slate-700 text-center z-40"> 1 </div>
+        <div class="absolute right-0 bottom-0 bg-slate-300 w-8 h-8 text-white text-center z-30"> 2 </div>
+        <div class="absolute inset-x-0 bg-slate-500 h-8 text-white text-center z-20"> 3 </div>
+        <div class="absolute inset-y-0 bg-slate-700 w-8 text-white text-center right-0 z-10 pt-12"> 4 </div>
+      </div>   
+      <div class="pt-2">
+        <div class="text-[11px]">
+          1 => has z-index z-40, top most layer.
+          2 => has z-index z-30, layer below 1.
+          3 => has z-index z-20, layer below 2.
+          4 => has z-index z-10, lower most layer.
+        </div>
+      </div>
+    </div>
+
+    <h2 class="ml-5 pl-1">Container border related classes </h2>
+    <div class="border border-blue-200 m-5 p-5 mt-0 font-mono">
+      <div class="container flex mx-auto">
+        <div class="w-1/6 h-32 m-2 border-2 border-slate-300 p-2 text-sm text-center bg-slate-50">All sides (border-2)</div>
+        <div class="w-1/6 h-32 m-2 border-x-2 border-slate-300 p-2 text-sm text-center bg-slate-50">X sides (border-x-2)</div>
+        <div class="w-1/6 h-32 m-2 border-y-2 border-slate-300 p-2 text-sm text-center bg-slate-50">Y sides (border-y-2)</div>
+        <div class="w-1/6 h-32 m-2 border-r-2 border-slate-300 p-2 text-sm text-center bg-slate-50">Right side (border-r-2)</div>
+        <div class="w-1/6 h-32 m-2 border-b-2 border-slate-300 p-2 text-sm text-center bg-slate-50">Bottom side (border-b-2)</div>
+      </div> 
+
+      <div class="container flex mx-auto">
+        <div class="w-1/6 h-32 m-2 border-2 border-slate-300 rounded p-2 text-sm text-center bg-slate-50">Rounded edges (border-2 rounded)</div>
+        <div class="w-1/6 h-32 m-2 border-2 border-slate-300 rounded-xl p-2 text-sm text-center bg-slate-50">Rounded larger edges (border-2 rounded-xl)</div>
+        <div class="w-1/6 h-32 m-2 border-2 border-slate-300 rounded-t-2xl p-2 text-sm text-center bg-slate-50">Rounded top edges (border-2 top rounded-t-2xl)</div>
+        <div class="w-1/3 h-32 m-2 border-2 border-slate-300 rounded-full p-2 text-sm text-center bg-slate-50 pt-8">Full Rounded edges (border-2 rounded-full)</div>
+      </div>      
+    </div>
+  </body>
+</html>
