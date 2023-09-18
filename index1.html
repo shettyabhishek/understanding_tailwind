@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link href="./tailwindstyle.css" rel="stylesheet"-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Psuedo Classes</title>
+  </head>
+  <body>    
+
+    <!-- Pseudo classes -->    
+    <h2 class="ml-5  mt-3 pl-1">Pseudo classes - Button interactions</h2>
+    <div class="container mx-auto m-10 mt-0 pt-5 pb-5 pl-10 bg-slate-100 border border-blue-200 shadow-lg shadow-slate-300">
+        <button class="border border-slate-400 rounded-md p-2 w-32">Basic Button</button>
+        <button class="border border-slate-400 rounded-md p-2 w-32 hover:bg-slate-400 ml-2 hover:text-white">Hover Button</button>
+        <button class="border border-slate-400 rounded-md p-2 w-32 hover:bg-slate-400 ml-2 hover:text-white focus:bg-blue-300 focus:outline-none focus:border-slate-400">Focus Button</button>
+        <button class="border border-slate-400 rounded-md p-2 w-32 hover:bg-slate-400 ml-2 hover:text-white focus:bg-blue-300 focus:outline-none focus:border-slate-400 active:bg-blue-600">Active Button</button>
+        <button class="border border-slate-300 rounded-md p-2 w-32 disabled:opacity-75 disabled:text-slate-300 cursor-not-allowed ml-2" disabled>Disabled </button>
+    </div>
+
+    <h2 class="ml-5  mt-3 pl-1">Pseudo classes - Link interactions</h2>
+    <div class="container mx-auto m-10 mt-0 pt-5 pb-5 pl-10 bg-slate-100 border border-blue-200 shadow-lg shadow-slate-300">
+        <a class="p-2 w-32 underline" href="https://www.google.com">Basic Link</a>
+        <a class="p-2 w-32 underline hover:text-blue-300 hover:no-underline" href="https://www.google.com">Hover Link</a>        
+        <a class="p-2 w-32 underline hover:text-blue-300 hover:no-underline visited:text-amber-500" href="https://www.google.com" target="_blank">Visited Link</a> 
+        <a class="p-2 w-32 inline-block text-center hover:text-white hover:no-underline border border-slate-400 rounded-md hover:bg-slate-400 ml-2 focus:bg-blue-300 focus:outline-none focus:border-slate-400 active:bg-blue-600" href="https://www.google.com" target="_blank">Link Button</a>    
+        <a class="group w-64 inline-block text-center hover:text-white hover:no-underline border border-slate-400 rounded-md hover:bg-slate-200 ml-2 focus:bg-blue-300 focus:outline-none focus:border-slate-400 active:bg-blue-600" href="https://www.google.com" target="_blank">
+            <h4 class="text-lg bg-slate-400 p-2 ">Attention!!</h4>
+            <p class="group-hover:text-blue-400">Sample implementation of interactions in grouped elements</p>
+        </a>         
+    </div>
+
+    <h2 class="ml-5  mt-3 pl-1">Pseudo classes - List item interactions(First, last, even, odd)
+
+        
+    </h2>
+    <div class="container flex mx-auto m-10 mt-0 pt-5 pb-5 pl-10 bg-slate-100 border border-blue-200 shadow-lg shadow-slate-300">        
+        <ul class="w-72 border border-slate-500 rounded">
+            <li class="flex items-center p-3 space-x-3 first:bg-sky-300 odd:bg-slate-200 even:bg-gray-100">
+                <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                </svg>
+                <span>Individual configuration</span>
+            </li>
+            <li class="flex items-center p-3 space-x-3  odd:bg-slate-200 even:bg-gray-100">
+                <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                </svg>
+                <span>No setup, or hidden fees</span>
+            </li>
+            <li class="flex items-center p-3 space-x-3  odd:bg-slate-200 even:bg-gray-100">
+                <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                </svg>
+                <span>Team size: <span class="font-semibold text-gray-900 dark:text-white">1 developer</span></span>
+            </li>
+            <li class="flex items-center p-3 space-x-3  odd:bg-slate-200 even:bg-gray-100">
+                <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                </svg>
+                <span>Premium support: <span class="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+            </li>
+            <li class="flex items-center p-3 space-x-3  odd:bg-slate-200 even:bg-gray-100">
+                <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                </svg>
+                <span>Free updates: <span class="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+            </li>
+        </ul>
+
+        <ul class="w-72 border border-slate-500 rounded ml-3">
+            <li class="flex items-center p-3 space-x-3 first:bg-sky-300 border-b-2 border-indigo-100 first: border-0">
+                <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                </svg>
+                <span>Individual configuration</span>
+            </li>
+            <li class="flex items-center p-3 space-x-3 first:bg-sky-300 border-b-2 border-indigo-100">
+                <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                </svg>
+                <span>No setup, or hidden fees</span>
+            </li>
+            <li class="flex items-center p-3 space-x-3 first:bg-sky-300 border-b-2 border-indigo-100">
+                <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                </svg>
+                <span>Team size: <span class="font-semibold text-gray-900 dark:text-white">1 developer</span></span>
+            </li>
+            <li class="flex items-center p-3 space-x-3 first:bg-sky-300 border-b-2 border-indigo-100">
+                <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                </svg>
+                <span>Premium support: <span class="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+            </li>
+            <li class="flex items-center p-3 space-x-3 first:bg-sky-300 border-b-2 border-indigo-100 last:border-0 last:bg-red-400">
+                <svg class="flex-shrink-0 w-3.5 h-3.5 text-green-500 dark:text-green-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 16 12">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5.917 5.724 10.5 15 1.5"/>
+                </svg>
+                <span>Free updates: <span class="font-semibold text-gray-900 dark:text-white">6 months</span></span>
+            </li>
+        </ul>
+    </div>
+   </body>
+</html>
