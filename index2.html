@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link href="./tailwindstyle.css" rel="stylesheet"-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Responsive Layouting</title>
+  </head>
+  <body>  
+    <!-- Pseudo classes -->    
+    <h2 class="ml-5 mt-3 pb-3 text-xl">Understanding Breaking point classes.</h2>
+    <div class="w-[95%] mx-auto m-10 mt-0 p-5 bg-slate-100 border border-blue-200 shadow-lg shadow-slate-300 sm:text-amber-500 md:text-green-700 lg:text-blue-800 xl:text-amber-900 2xl:text-violet-500">
+        <div class="p-2 border-2 sm:border-amber-500 md:border-green-500 lg:border-blue-800 xl:border-amber-900 2xl:border-violet-500">This is a sample text which would resize and structure itself(change of font color, font size and background color) based on the window resizeing / pixel resolutions.<br/>In order to understand the responsive feature, open this html on browser and resize the window. Or use the developer tool and provide the various resolutions.</div>
+        <h2 class="text-md underline underline-offset-2 pt-2 text-slate-900">Below are the various resolution based classes</h2>
+        <ul style="column-count: 2;" class="border-2 mt-2 p-2 sm:border-amber-500 md:border-green-500 lg:border-blue-800 xl:border-amber-900 2xl:border-violet-500">   
+            <li class="sm:text-amber-500 md:text-slate-400 lg:text-slate-400 xl:text-slate-400 2xl:text-slate-400 p-2 border-b-2 border-slate-400"><strong>Small devices:</strong> sm => {{@media(min-width: 640px)}}</li>
+            <li class="sm:text-slate-400 md:text-green-700 lg:text-slate-400 xl:text-slate-400 2xl:text-slate-400 p-2 border-b-2 border-slate-400"><strong>Medium devices:</strong> md => {{@media(min-width: 768px)}}</li>
+            <li class="sm:text-slate-400 md:text-slate-400 lg:text-blue-800 xl:text-slate-400 2xl:text-slate-400 p-2 border-b-2 border-slate-400"><strong>Large devices:</strong> lg => {{@media(min-width: 1024px)}}</li>
+            <li class="sm:text-slate-400 md:text-slate-400 lg:text-slate-400 xl:text-amber-900 2xl:text-slate-400 p-2 border-b-2 border-slate-400"><strong>Extra Large devices:</strong> xl => {{@media(min-width: 1280px)}}</li>
+            <li class="sm:text-slate-400 md:text-slate-400 lg:text-slate-400 xl:text-slate-400 2xl:text-violet-500 p-2 border-b-2 border-slate-400"><strong>Double Extra Large devices:</strong> 2xl => {{@media(min-width: 1536px)}}</li>            
+        </ul>
+    </div>    
+
+    <h2 class="ml-5 mt-3 pb-3 text-xl">Column Based Structuring.</h2>
+    <div class="w-[95%] mx-auto m-10 mt-0 p-5 bg-slate-100 border border-blue-200 shadow-lg shadow-slate-300">
+        <div class="columns-1 border-b-2 pb-2"><h3 class="text-blue-700 font-bold">(columns-1)</h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+        <div class="columns-2 border-b-2 pb-2"><h3 class="text-blue-700 font-bold">(columns-2)</h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+        <div class="columns-3 border-b-2 pb-2"><h3 class="text-blue-700 font-bold">(columns-3)</h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+        <div class="columns-6 border-b-2 gap-2 pb-2"><h3 class="text-blue-700 font-bold">(columns-6, gap-2)</h3>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</div>
+    </div>        
+  </body>
+</html>
