@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--link href="./tailwindstyle.css" rel="stylesheet"-->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Flex Column</title>
+  </head>
+  <body>  
+    <!-- Pseudo classes -->    
+    <h2 class="ml-5 mt-3 pb-3 text-xl">Understanding Flex classes - COL.</h2>
+    <div class="flex items-start justify-start">        
+        <div class="w-1/3 mx-auto m-10 mt-0 p-5 bg-slate-100 border border-blue-200 shadow-lg shadow-slate-300">
+            <h3 class="text-md">default</h3>
+            <div class="flex flex-col w-full border-blue-200 border-2">
+                <div class="p-5 border-2 border-slate-400 bg-slate-200 w-8"></div>
+                <div class="p-5 border-2 border-slate-400 bg-slate-200 w-8"></div>
+                <div class="p-5 border-2 border-slate-400 bg-slate-200 w-8"></div>
+                <div class="p-5 border-2 border-slate-400 bg-slate-200 w-8"></div>            
+            </div>
+        </div>
+        <div class="w-1/3 mx-auto m-10 mt-0 p-5 bg-slate-100 border border-blue-200 shadow-lg shadow-slate-300">
+            <h3 class="text-md">Items center aligned</h3>
+            <div class="flex flex-col w-full border-blue-200 border-2 items-center">
+                <div class="p-5 border-2 border-slate-400 bg-slate-200 w-8"></div>
+                <div class="p-5 border-2 border-slate-400 bg-slate-200 w-8"></div>
+                <div class="p-5 border-2 border-slate-400 bg-slate-200 w-8"></div>
+                <div class="p-5 border-2 border-slate-400 bg-slate-200 w-8"></div>
+            </div>
+        </div>
+        <div class="w-1/3 mx-auto m-10 mt-0 p-5 bg-slate-100 border border-blue-200 shadow-lg shadow-slate-300">
+            <h3 class="text-md">Items right aligned</h3>
+            <div class="flex flex-col w-full border-blue-200 border-2 items-end">
+                <div class="p-5 border-2 border-slate-400 bg-slate-200 w-8"></div>
+                <div class="p-5 border-2 border-slate-400 bg-slate-200 w-8"></div>
+                <div class="p-5 border-2 border-slate-400 bg-slate-200 w-8"></div>
+                <div class="p-5 border-2 border-slate-400 bg-slate-200 w-8"></div>
+            </div>
+        </div>
+    </div>    
+    <h3 class="text-md mt-3 pl-5 pb-2">Child elements with a vertical gap & ordering</h3>
+    <div class="flex items-start justify-start">        
+        <div class="w-1/3 mx-auto m-10 mt-0 p-5 bg-slate-100 border border-blue-200 shadow-lg shadow-slate-300">    
+            <h3 class="text-md">Gap provided between elements (gap-*)</h3>
+            <div class="flex flex-col w-full border-blue-200 border-2 items-center gap-4">
+                <div class="p-4 border-2 border-slate-400 bg-slate-200">A</div>
+                <div class="p-4 border-2 border-slate-400 bg-slate-200">B</div>
+                <div class="p-4 border-2 border-slate-400 bg-slate-200">C</div>
+                <div class="p-4 border-2 border-slate-400 bg-slate-200">D</div>            
+            </div>
+        </div>
+        <div class="w-1/3 mx-auto m-10 mt-0 p-5 bg-slate-100 border border-blue-200 shadow-lg shadow-slate-300">    
+            <h3 class="text-md">Ordering the elements using (order-*)</h3>
+            <div class="flex flex-col w-full border-blue-200 border-2 items-center gap-4">
+                <div class="p-4 border-2 border-slate-400 bg-slate-200 order-4">A</div>
+                <div class="p-4 border-2 border-slate-400 bg-slate-200 order-1">B</div>
+                <div class="p-4 border-2 border-slate-400 bg-slate-200 order-2">C</div>
+                <div class="p-4 border-2 border-slate-400 bg-slate-200 order-3">D</div>            
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
